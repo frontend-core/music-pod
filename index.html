@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="https://github.com/thuongtruong1009/">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Music app - thuongtruong1009</title>
+</head>
+
+<body>
+
+    <main class="container">
+        <div class="header">
+            <a href="https://github.com/thuongtruong1009/"><sup>&copy;</sup>thuongtruong1009</a>
+            <h1>Music app</h1>
+            <p><em>--- medicine for piece mind ---</em></p>
+        </div>
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="./public/artics/hay_trao_cho_anh.jpg" id="img-main" />
+                    <img class="vinyl-record" src="./public/vinyl_record_player_arm.png" id="img-sub" style="transition: 1s;" />
+                </div>
+                <div class="flip-box-back">
+                    <h2>hello background</h2>
+                </div>
+            </div>
+        </div>
+        <div class="lyric">
+            <p id="title">Hãy trao cho anh</p>
+            <p id="artist"><em>--- Sơn Tùng M-TP ---</em></p>
+        </div>
+        <div class="status">
+            <audio controls>
+                <source src="Music/hay trao cho anh.mp3">
+            </audio>
+            <span><img src="./public/un_repeat.ico" id="un-loop" /></span>
+        </div>
+        <div class="control">
+            <img class="play-list" src="./public/playlist.ico" />
+            <i class="fas fa-backward" id="prev" title="Previous"></i>
+            <i class="fas fa-play play-btn" id="play" title="Play"></i>
+            <i class="fas fa-forward" id="next" tile="Next"></i>
+            <img class="heart" src="./public/unheart.ico" id="love" />
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
